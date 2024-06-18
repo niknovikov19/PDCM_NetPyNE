@@ -153,21 +153,44 @@ netParams.popParams['bkg_IF'] = {'numCells': 1, 'cellModel': 'NetStim','rate': 4
 # External input parameters
 ############################################################
 
+def generate_sin_spike_times(r0, A, f, ncells):
+    T = cfg.duration
+    dt = cfg.dt
+    tvec = np.arange(0, T, dt)
+    rvec = r0 + A * np.sin (2 * np.pi * f * tvec / 1000)
+    Nt = len(tvec)
+    S = (np.random.rand(ncells, Nt) < (rvec * dt / 1000))
+    spike_times = [tvec[np.argwhere(S[n, :])].ravel().tolist()
+                   for n in range(ncells)]
+    return spike_times
+
 if cfg.DC == False: # External Input as Poisson
 	for r in range(0,8):
+        
+# =============================================================================
+# 		netParams.popParams['poiss'+str(L[r])] = {
+# 						'numCells': N_[r], 
+# 						'cellModel': 'NetStim',
+# 						'rate': InpPoiss[r]*f_ext,   
+# 						'start': 0.0, 
+# 						'noise': 1.0, 
+# 						'delay': 0}
+# =============================================================================
+
+		r0 = InpPoiss[r] * f_ext
+		R = generate_sin_spike_times(r0, A=r0*0.5, f=5, ncells=N_[r])
 		netParams.popParams['poiss'+str(L[r])] = {
-						'numCells': N_[r], 
-						'cellModel': 'NetStim',
-						'rate': InpPoiss[r]*f_ext,   
-						'start': 0.0, 
-						'noise': 1.0, 
-						'delay': 0}
+  						'numCells': N_[r], 
+  						'cellModel': 'VecStim',
+  						'spkTimes': R,   
+  						'delay': 0}
 		
-		auxConn=np.array([range(0,N_[r],1),range(0,N_[r],1)])
+		auxConn=np.array([range(0,N_[r],1), range(0,N_[r],1)])
 		netParams.connParams['poiss->'+str(L[r])] = {
 			'preConds': {'pop': 'poiss'+str(L[r])},  
 			'postConds': {'pop': L[r]},
-			'connList': auxConn.T,   
+			'connList': auxConn.T,
+            'synsPerConn': 1,
 			'weight': 'max(0, weightMin+normal(0,dweight*weightMin))',  
 			'delay': 0.5} # 1 delay
 			

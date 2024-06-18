@@ -21,7 +21,7 @@ cfg = specs.SimConfig() # object of class SimConfig to store simulation configur
 ############################################################
 
 cfg.seeds['stim']=3
-cfg.duration = 5*1e3 #6*1e2   # Duration of the simulation, in ms
+cfg.duration = 2*1e3 #6*1e2   # Duration of the simulation, in ms
 cfg.dt = 0.025          # Internal integration timestep to use
 cfg.verbose = 0     # Show detailed messages
 cfg.seeds['m'] = 123
@@ -50,7 +50,7 @@ cfg.createPyStruct = True
 # DC=False ; TH=True;  Balanced=True   => Figure 10A. But I want a partial reproduce so I guess Figure 10C is not necessary
 
 # Size of Network. Adjust this constants, please!
-cfg.ScaleFactor = 0.10  # 1.0 = 80.000 
+cfg.ScaleFactor = 0.010  # 1.0 = 80.000 
 
 # External input DC or Poisson
 cfg.DC = False #True = DC // False = Poisson

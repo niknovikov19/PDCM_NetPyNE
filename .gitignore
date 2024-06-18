@@ -1,3 +1,7 @@
 data/
 x86_64/
 *.pyc
+*.c
+*.o
+*.dll
+*.pkl
