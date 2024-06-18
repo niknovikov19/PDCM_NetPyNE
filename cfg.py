@@ -21,12 +21,14 @@ cfg = specs.SimConfig() # object of class SimConfig to store simulation configur
 ############################################################
 
 cfg.seeds['stim']=3
-cfg.duration = 1*1e3 #6*1e2   # Duration of the simulation, in ms
+cfg.duration = 5*1e3 #6*1e2   # Duration of the simulation, in ms
 cfg.dt = 0.025          # Internal integration timestep to use
 cfg.verbose = 0     # Show detailed messages
 cfg.seeds['m'] = 123
 cfg.printPopAvgRates = True
 cfg.printRunTime = 1
+
+#cfg.useMPI = True
 
 ### Options to save memory in large-scale ismulations
 cfg.gatherOnlySimData = False  #Original
@@ -75,8 +77,11 @@ cfg.printSynsAfterRule = False
 cfg.recordCellsSpikes = ['L2e', 'L2i', 'L4e', 'L4i', 'L5e', 'L5i','L6e', 'L6i'] # record only spikes of cells (not ext stims)
 
 # raster plot (include update in netParams.py)
-cfg.analysis['plotRaster']={'include': [], 'timeRange': [100,600], 'popRates' : False, 'figSize' : (6,7),  
-	'labels':'overlay', 'orderInverse': True, 'fontSize':16, 'showFig':False, 'saveFig': True}
+cfg.analysis['plotRaster']={'include': [],
+  #'timeRange': [100,600], 
+  'popRates' : False, 'figSize' : (6,7),  
+	#'labels':'overlay', 
+  'orderInverse': True, 'fontSize':16, 'showFig':False, 'saveFig': True}
 
 # statistics plot (include update in netParams.py)
 cfg.analysis['plotSpikeStats'] = {'include' : [], 'stats' : ['rate'], 'legendLabels':cfg.recordCellsSpikes,

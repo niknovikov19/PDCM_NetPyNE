@@ -30,9 +30,7 @@ def Reescale(ScaleFactor, C, N_Full, w_p, f_ext, tau_syn, Inp, InpDC):
 			for c in range(0,8): 
 				Ncon[r][c]=(np.log(1.-C[r][c])/np.log(1. -1./(N_Full[r]*N_Full[c])) ) /N_Full[r]
 
-		#w=w_p*np.column_stack(np.vstack( [1.0, -4.0] for i in range(0,8)) for i in range(0,4))
-		w = w_p * np.column_stack([np.vstack([[1.0, -4.0] for i in range(8)]) for j in range(4)])
-
+		w=w_p*np.column_stack([np.vstack( [[1.0, -4.0] for i in range(0,8)]) for i in range(0,4)])
 		w[0][2]=2.0*w[0][2]
 
 		x1_all = w * Ncon * F_out

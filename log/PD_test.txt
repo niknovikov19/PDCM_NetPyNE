@@ -1,0 +1,135 @@
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+numprocs=14
+NEURON -- VERSION 8.2.4 HEAD (1d87d5d39) 2024-02-09
+Duke, Yale, and the BlueBrain Project -- Copyright 1984-2022
+See http://neuron.yale.edu/neuron/credits
+
+Additional mechanisms from files
+ "IntFire_PD.mod"
+  Number of cells on node 2: 1102 
+  Number of stims on node 2: 0 
+  Number of connections on node 2: 214692 
+  Number of cells on node 12: 1102 
+  Number of stims on node 12: 0 
+  Number of connections on node 12: 214549 
+  Number of cells on node 13: 1101 
+  Number of stims on node 13: 0 
+  Number of connections on node 13: 213531 
+  Number of cells on node 6: 1102 
+  Number of stims on node 6: 0 
+  Number of connections on node 6: 214394 
+  Number of cells on node 8: 1102 
+  Number of stims on node 8: 0 
+  Number of connections on node 8: 214417 
+  Number of cells on node 9: 1102 
+  Number of stims on node 9: 0 
+  Number of connections on node 9: 214970 
+  Number of cells on node 11: 1102 
+  Number of stims on node 11: 0 
+  Number of connections on node 11: 214211 
+  Number of cells on node 7: 1102 
+  Number of stims on node 7: 0 
+  Number of connections on node 7: 214816 
+  Number of cells on node 4: 1102 
+  Number of stims on node 4: 0 
+  Number of connections on node 4: 214426 
+  Number of cells on node 3: 1102 
+  Number of stims on node 3: 0 
+  Number of connections on node 3: 214906 
+  Number of cells on node 10: 1102 
+  Number of stims on node 10: 0 
+  Number of connections on node 10: 215137 
+  Number of cells on node 1: 1102 
+  Number of stims on node 1: 0 
+  Number of connections on node 1: 215027 
+  Number of cells on node 5: 1102 
+  Number of stims on node 5: 0 
+  Number of connections on node 5: 213732 
+
+Start time:  2024-06-17 21:29:58.148689
+
+Creating network of 17 cell populations on 14 hosts...
+  Number of cells on node 0: 1102 
+  Done; cell creation time = 0.09 s.
+  Number of stims on node 0: 0 
+  Done; cell stims creation time = 0.00 s.
+Making connections...
+  Number of connections on node 0: 214159 
+  Done; cell connection time = 19.20 s.
+0.0s
+
+Running simulation using NEURON for 5000.0 ms...
+1.0s
+2.0s
+3.0s
+4.0s
+5.0s
+  Done; run time = 20.42 s; real-time ratio: 0.24.
+
+Gathering data...
+  Done; gather time = 23.61 s.
+
+Analyzing...
+  Cells: 15427
+  Connections: 3002967 (194.66 per cell)
+  Spikes: 109712 (1.42 Hz)
+  Simulated time: 5.0 s; 14 workers
+  Run time: 20.42 s
+   L2e : 0.857 Hz
+   L2i : 4.255 Hz
+   L4e : 4.271 Hz
+   L4i : 5.337 Hz
+   L5e : 5.489 Hz
+   L5i : 8.015 Hz
+   L6e : 0.065 Hz
+   L6i : 6.140 Hz
+   bkg_IF : 0.000 Hz
+   poissL2e : 0.000 Hz
+   poissL2i : 0.000 Hz
+   poissL4e : 0.000 Hz
+   poissL4i : 0.000 Hz
+   poissL5e : 0.000 Hz
+   poissL5i : 0.000 Hz
+   poissL6e : 0.000 Hz
+   poissL6i : 0.000 Hz
+Saving output as data/pd_scale-0.1_DC-0_TH-0_Balanced-0_dur-5_data.pkl ... 
+Finished saving!
+  Done; saving time = 39.14 s.
+Preparing spike data...
+Plotting raster...
+Plotting spike stats...
+  Done; plotting time = 16.15 s
+
+Total time = 119.91 s
+
+h_vmem=16G
+maxrss=8.284G
+
+
